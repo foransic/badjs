@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Badj's - add instantly & easily social badges to your pages</title>
+        <meta name="description" content="Add instantly & easily social badges to your pages">
+        <meta name="viewport" content="width=device-width">
+		
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Badj's CSS file -->
+		<link rel="stylesheet" href="../src/css/badjs.css">
+		
+		<style>
+			body {
+				margin-top: 50px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+    </head>
+    <body>
+		<div class="container">
+			<!-- Main jumbotron for a primary marketing message or call to action -->
+			<div class="jumbotron">
+				<h1>Badj's</h1>
+				<p>Add instantly & easily social badges to your pages.</p>
+			</div>
+			<h2>Square (default)</h2>
+			<ul class="badjs clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+			
+			<h2>Circle</h2>
+			<ul class="badjs circle clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+			
+			<h2>Rounded</h2>
+			<ul class="badjs rounded clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+			
+			<h2>Egg</h2>
+			<ul class="badjs egg clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+						
+			<h2>Bookmark</h2>
+			<ul class="badjs bookmark clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+			
+			<h2>TV</h2>
+			<ul class="badjs tv clearfix">
+				<li data-badj="mail" data-url="mailto:francois@souin.fr"></li>
+				<li data-badj="phone" data-url="#"></li>
+				<li data-badj="twitter" data-url="https://twitter.com/fsouin"></li>
+				<li data-badj="fb" data-url="#"></li>
+				<li data-badj="linkedin" data-url="http://www.linkedin.com/in/fsouin"></li>
+			</ul>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Badj's JS file -->
+		<script src="../src/js/jquery.badjs.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.badjs li').each(function() {
+					$(this).badjIt();
+				});
+			});
+		</script>
+	</body>
+</html>
