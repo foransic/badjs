@@ -1,15 +1,14 @@
-# Badj's 
+# Badj's
 
-**add instantly &amp; easily social badges to your websites**
+**add instantly & easily social badges to your websites**
 
-Badj's is a jQuery plugin that eases badges integration in your websites.
+Badj's is a ~~jQuery~~ jQuery & Vanilla plugin that eases badges integration in your websites.
 
 ## Get started
 
 1. Download CSS & JS files & include it in your web page
-2. Make sure you include jQuery API (v1.10 or further)
+2. **Only if you use the jQuery version**, make sure you include jQuery API (v1.10 or further) 
 3. Include a list element which will contains badges, for example :
-
 
 ```html
 <ul class="badjs">
@@ -20,19 +19,32 @@ Badj's is a jQuery plugin that eases badges integration in your websites.
 4. Include the javascript that will initiate badges, for example :
 
 ```javascript
+/**
+jQuery example
+*/
 $(document).ready(function() {
 
-	$('.badjs li').each(function() {
+    $('.badjs li').each(function() {
 
-		$(this).badjIt();
+        $(this).badjIt();
 
-	});
+    });
 
 });
+
+/**
+Vanilla example
+*/
+window.onload = function() {
+  // init badges
+  var badjs = document.querySelectorAll('.badjs li');
+
+  for(idx = 0; idx < badjs.length; idx++) {
+    badjIt(badjs[idx]);
+  }
+}
 ```
 
 ## Examples
 
 Example is better than precept, you can find a working example in docs/ folder.
-
-
